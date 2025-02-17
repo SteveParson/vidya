@@ -68,7 +68,7 @@ def build_ebay_url(query: str) -> str:
         "_sop": "1",
         "_dmd": "1",
         "LH_ItemCondition": "3000",
-        "_ipg": "60",
+        "_ipg": "120",
     }
     return f"{base_url}?{'&'.join(f'{k}={v}' for k, v in params.items())}"
 
